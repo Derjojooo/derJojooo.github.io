@@ -1,0 +1,150 @@
+body
+{
+	padding: 2vw;
+}
+
+#wtf_index
+{
+   font-size: 6.5vw;
+}
+
+
+.heading
+{
+	line-height:1.2;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 800;
+}
+
+.at
+{
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 500;
+   font-size:5.5vw;
+}
+
+.regular
+{
+	line-height:1.2;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;  
+}
+
+.regular_small
+{
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;  
+	font-size:3vw;
+}
+
+
+.regular_right
+{   
+	line-height:1.2;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+	text-align:right;
+}
+
+
+.flow_text
+{	
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+	font-size: 2vw;
+	line-height:auto;
+	display: block;
+}
+
+#text
+{
+	width: 35%;
+	margin-left:2vw;
+	margin-top:5vw;
+	display: inline-block;
+	float:left;
+}
+
+#bild
+{
+	padding-top:1vw;
+	padding-right:7%;
+	width:35%;
+	display: inline-block;
+	float:right;
+	
+}
+
+#thisisme
+{
+	position:absolute;
+	top:14vw;
+	right:24vw;
+	
+}
+
+#wrapper
+{
+	padding-top:7vw;
+}
+
+table
+{
+	width:95%;
+	border-collapse: collapse;
+}
+
+#images
+{
+	padding-top:2vw;
+	
+}
+
+#socials
+{
+	line-height:4vw;
+	margin-left:8.4vw;
+	margin-top:8.4vw;
+}
+
+a:link {
+  color: black; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: line-through;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+sub, sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  position: relative;
+
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
