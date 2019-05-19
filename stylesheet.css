@@ -6,6 +6,17 @@ body
 #wtf_index
 {
    font-size: 6.5vw;
+	  z-index: 1;
+}
+
+#button
+{
+ float: right;
+ position: absolute;
+ top: 20vw;
+ right: 7vw;
+ z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+ cursor: pointer;
 }
 
 
@@ -27,19 +38,19 @@ body
 {
 	line-height:1.2;
 	font-family: aktiv-grotesk-extended, sans-serif;
-	font-weight: 400;  
+	font-weight: 400;
 }
 
 .regular_small
 {
 	font-family: aktiv-grotesk-extended, sans-serif;
-	font-weight: 400;  
+	font-weight: 400;
 	font-size:3vw;
 }
 
 
 .regular_right
-{   
+{
 	line-height:1.2;
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 400;
@@ -48,7 +59,7 @@ body
 
 
 .flow_text
-{	
+{
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 400;
 	font-size: 2vw;
@@ -72,7 +83,7 @@ body
 	width:35%;
 	display: inline-block;
 	float:right;
-	
+
 }
 
 #thisisme
@@ -80,7 +91,7 @@ body
 	position:absolute;
 	top:14vw;
 	right:24vw;
-	
+
 }
 
 #wrapper
@@ -97,7 +108,7 @@ table
 #images
 {
 	padding-top:2vw;
-	
+
 }
 
 #socials
@@ -108,8 +119,8 @@ table
 }
 
 a:link {
-  color: black; 
-  background-color: transparent; 
+  color: black;
+  background-color: transparent;
   text-decoration: none;
 }
 
