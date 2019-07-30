@@ -13,7 +13,7 @@ body
 {
  float: right;
  position: absolute;
- top: 20vw;
+ top: 25vw;
  right: 7vw;
  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
  cursor: pointer;
