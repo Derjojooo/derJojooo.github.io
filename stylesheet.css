@@ -2,6 +2,7 @@ body
 {
     background-image: url(light.gif);
     background-size: cover;
+		background-repeat: repeat;
 
 
 
@@ -21,12 +22,15 @@ body
 
 #button
 {
+
+	background: transparent;
  float: right;
  position: absolute;
  top: 25vw;
  right: 7vw;
  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
  cursor: pointer;
+ mix-blend-mode: color-dodge;
 }
 
 
