@@ -1,11 +1,21 @@
 body
 {
+    background-image: url(light.gif);
+    background-size: cover;
+
+
+
+    height: 100vh;
+    padding:0;
+    margin:0;
+
 	padding: 2vw;
 }
 
 #wtf_index
 {
-   font-size: 6.5vw;
+		color: white;
+    font-size: 6.5vw;
 	  z-index: 1;
 }
 
@@ -119,19 +129,19 @@ table
 }
 
 a:link {
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: line-through;
 }
