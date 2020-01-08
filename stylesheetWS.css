@@ -1,70 +1,195 @@
-<!doctype html>
+body
+{
 
-<html lang="en">
-
- <div id="overlay"></div> 
-
-<head>
+background-color:black
+;
 
 
 
 
-   <meta charset="utf-8">
+    height: 100vh;
+    padding:0;
+    margin:0;
 
-   <title>Johann Schnettker</title>
-   <meta name="description" content="A Design/Art Portfolio">
-   <meta name="author" content="Johann Schnettker">
-
-   <link rel="stylesheet" href="stylesheetWS.css">
-   <link rel="stylesheet" href="https://use.typekit.net/aqf8lvs.css">
-   <link rel="icon"
-         type="image/png"
-         href="favicon.ico">
-</head>
-
-<body>
-   <div id="wtf_index">
-     <div>
-	 <table>
-		 <tr>
-			 <th> <span class="regular">Our Work</span> </th>
-			 
-		 </tr>
-	 </table>
- </div>
- 
- <script>
-function on() {
-  document.getElementById("darkoverlay").style.display = "block";
+	padding: 2vw;
 }
 
-function off() {
-  document.getElementById("darkoverlay").style.display = "none";
+#darkoverlay
+{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
-</script>
 
- <div id="darkoverlay" onclick="off()">
-  <div id="text">Overlay Text</div>
-</div>
- 
- 
- 
-	  <div id=images>
-	  <img src="worksamples/birch logo 081219.png" style="width:45%;padding:2%;cursor:pointer;"onclick="on()";>
-	  <img src="worksamples/Bildschirmfoto 2019-11-16 um 16.54.24.png" style="width:45%;padding:2%;">
+#wtf_index
+{
+		color: white;
+    font-size: 6.5vw;
+	  z-index: 1;
+}
 
-	  <img src="images/Datei 3.png" style="width:45%;padding:2%;">
-	  <img src="images/Datei 7.png" style="width:45%;padding:2%;">
+#button
+{
 
-      </div>
-	      <div>
-	 	 <table>
-	 		 <tr>
-				 <th> <span class="regular"><a href="about.html">.About//</a></span> </th>
-	 			 <th> <span class="regular_right"><a href="contact.html">.Contact//</a></span> </th>
-	 		 </tr>
-	 	 </table>
-	  </div>
-   </div>
-</body>
-</html>
+	background: transparent;
+ float: right;
+ position: absolute;
+ top: 25vw;
+ right: 7vw;
+ z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+ cursor: pointer;
+}
+
+
+.heading
+{
+	line-height:1.2;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 800;
+}
+
+.at
+{
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 500;
+   font-size:5.5vw;
+}
+
+.regular
+{
+	line-height:1.2;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+}
+
+.regular_small
+{
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+	font-size:3vw;
+}
+
+
+.regular_right
+{
+	line-height:1.2;
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+	text-align:right;
+}
+
+
+.flow_text
+{
+	font-family: aktiv-grotesk-extended, sans-serif;
+	font-weight: 400;
+	font-size: 2vw;
+	line-height:auto;
+	display: block;
+}
+
+ .pointer {
+ cursor: pointer;
+ }
+
+#text
+{
+	width: 35%;
+	margin-left:2vw;
+	margin-top:5vw;
+	display: inline-block;
+	float:left;
+}
+
+#bild
+{
+	padding-top:1vw;
+	padding-right:7%;
+	width:35%;
+	display: inline-block;
+	float:right;
+
+}
+
+#thisisme
+{
+	position:absolute;
+	top:14vw;
+	right:24vw;
+
+}
+
+#wrapper
+{
+	padding-top:7vw;
+}
+
+table
+{
+	width:95%;
+	border-collapse: collapse;
+}
+
+#images
+{
+
+	padding-top:2vw;
+
+}
+
+#socials
+{
+	line-height:4vw;
+	margin-left:8.4vw;
+	margin-top:8.4vw;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: line-through;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+sub, sup {
+  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
+  font-size: 75%;
+
+  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
+  line-height: 0;
+
+  position: relative;
+
+  vertical-align: baseline;
+}
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
