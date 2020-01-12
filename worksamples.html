@@ -2,7 +2,7 @@
 
 <html lang="en">
 
- <div id="overlay"></div> 
+ <div id="overlay"></div>
 
 <head>
 
@@ -22,39 +22,60 @@
          href="favicon.ico">
 </head>
 
+<! Overlay >
+
+<script>
+function on() {
+ document.getElementById("whiteoverlay").style.display = "block";
+ document.getElementById("darkoverlay").style.display = "block";
+
+}
+
+function off() {
+ document.getElementById("whiteoverlay").style.display = "none";
+ document.getElementById("darkoverlay").style.display = "none";
+}
+</script>
+
+<div id="whiteoverlay" onclick="off()" >
+ <div id=overlay-content>
+<span class="regular">
+Overlay Text
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, con
+setetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed d
+iam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimat
+a sanctus est Lorem ipsum dolor sit amet.
+</span>
+
+ </div>
+</div>
+
+<div id="darkoverlay" onclick="off()">
+</div>
+
+<!overlay end>
+
 <body>
    <div id="wtf_index">
      <div>
 	 <table>
 		 <tr>
 			 <th> <span class="regular">Our Work</span> </th>
-			 
+
 		 </tr>
 	 </table>
  </div>
- 
- <script>
-function on() {
-  document.getElementById("darkoverlay").style.display = "block";
-}
 
-function off() {
-  document.getElementById("darkoverlay").style.display = "none";
-}
-</script>
 
- <div id="darkoverlay" onclick="off()">
-  <div id="text">Overlay Text</div>
-</div>
- 
- 
- 
+
 	  <div id=images>
-	  <img src="worksamples/birch logo 081219.png" style="width:45%;padding:2%;cursor:pointer;"onclick="on()";>
-	  <img src="worksamples/Bildschirmfoto 2019-11-16 um 16.54.24.png" style="width:45%;padding:2%;">
+	  <img src="worksamples/birch logo 081219.png" style="width:45%;margin:2%;cursor:pointer;"onclick="on()";>
+	  <img src="worksamples/Bildschirmfoto 2019-11-16 um 16.54.24.png" style="width:45%;margin:2%;">
 
-	  <img src="images/Datei 3.png" style="width:45%;padding:2%;">
-	  <img src="images/Datei 7.png" style="width:45%;padding:2%;">
+	  <img src="images/Datei 3.png" style="width:45%;margin:2%;">
+	  <img src="images/Datei 7.png" style="width:45%;margin:2%;">
 
       </div>
 	      <div>
