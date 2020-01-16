@@ -12,7 +12,7 @@ body
 }
 
 #overlay-content {
-  font-size: 50px;
+  font-size: 30px;
   height: 100%;
   overflow: scroll;
 
@@ -24,12 +24,12 @@ body
   margin: auto;
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
-  width: 60%; /* Full width (cover the whole page) */
+  width: 60vw; /* Full width (cover the whole page) */
   top: 10%;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255,255,255,1.95); /* Black background with opacity */
+  background-color: #FA00FF; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     margin-bottom: 5%;
 }
@@ -70,11 +70,24 @@ body
 }
 
 
+@media screen and (min-width:450px) {
+/* Bei jedem größeren Monitor kommen neue Regeln hinzu */
+   whiteoverlay { width:100%; }
+}
+
+
+
+.yellow
+{
+  color: #FFED00;
+}
+
 .heading
 {
-	line-height:1.2;
+	line-height:1.4;
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 800;
+  font-size: 90px;
 }
 
 .at
@@ -86,7 +99,7 @@ body
 
 .regular
 {
-	line-height:1.2;
+	line-height:0.8;
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 400;
 }
