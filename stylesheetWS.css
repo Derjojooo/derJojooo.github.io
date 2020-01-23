@@ -19,6 +19,9 @@ body
 
   }
 
+  .head::-webkit-scrollbar {
+      display: none;  // Safari and Chrome
+  }
 .none
 {
   padding:3vw;
