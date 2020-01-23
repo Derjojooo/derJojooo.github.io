@@ -1,19 +1,59 @@
+html, body { height: 100%; }
+
 body
 {
-background-color:blue;
-
-
-
-
-    height: 100vh;
-    padding:0;
-    margin:0;
-
+  background-color:black;
 	padding: 2vw;
+
+  overflow: auto;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+#overlay-content {
+  font-size: 30px;
+  height: 100%;
+  overflow: scroll;
+
+  }
+
+.none
+{
+  padding:3vw;
+  margin: auto;
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 60vw; /* Full width (cover the whole page) */
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFED00; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    margin-bottom: 5%;
+}
+
+
+#darkoverlay
+{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+
 }
 
 #wtf_index
 {
+  overflow: auto;
 		color: white;
     font-size: 6.5vw;
 	  z-index: 1;
@@ -32,11 +72,24 @@ background-color:blue;
 }
 
 
+@media screen and (min-width:450px) {
+/* Bei jedem größeren Monitor kommen neue Regeln hinzu */
+   whiteoverlay { width:100%; }
+}
+
+
+
+.yellow
+{
+  color: #FA00FF;
+}
+
 .heading
 {
-	line-height:1.2;
+	line-height:1.4;
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 800;
+  font-size: 50px;
 }
 
 .at
@@ -48,7 +101,7 @@ background-color:blue;
 
 .regular
 {
-	line-height:1.2;
+	line-height:0.8;
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 400;
 }
@@ -79,13 +132,18 @@ background-color:blue;
 	display: block;
 }
 
+ .pointer {
+ cursor: pointer;
+ }
+
 #text
 {
-	width: 35%;
+    color:black;
 	margin-left:2vw;
-	margin-top:5vw;
+	margin-top:3vw;
 	display: inline-block;
 	float:left;
+  	font-size: 4vw;
 }
 
 #bild
@@ -119,15 +177,29 @@ table
 
 #images
 {
-	padding-top:2vw;
 
+	padding-top:2vw;
 }
 
+.main_images
+{
+object-fit: cover;
+overflow: hidden;
+width:28%;
+margin:2%;
+cursor:pointer;
+height:20vw;
+}
 #socials
 {
 	line-height:4vw;
 	margin-left:8.4vw;
 	margin-top:8.4vw;
+}
+
+#footer
+{
+margin-bottom: 30px;
 }
 
 a:link {
@@ -152,22 +224,4 @@ a:active {
   color: white;
   background-color: transparent;
   text-decoration: none;
-}
-
-
-sub, sup {
-  /* Specified in % so that the sup/sup is the right size relative to the surrounding text */
-  font-size: 75%;
-
-  /* Zero out the line-height so that it doesn't interfere with the positioning that follows */
-  line-height: 0;
-
-  position: relative;
-
-  vertical-align: baseline;
-}
-
-sup {
-  /* Move the superscripted text up */
-  top: -0.5em;
 }
