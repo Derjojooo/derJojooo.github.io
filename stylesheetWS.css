@@ -185,6 +185,12 @@ table
 	padding-top:2vw;
 }
 
+.drop_shadow
+{
+   -webkit-box-shadow: 13px 10px 0px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 13px 10px 0px 0px rgba(0,0,0,0.1);
+  box-shadow: 13px 10px 0px 0px rgba(0,0,0,0.1);
+}
 .main_images
 {
 
