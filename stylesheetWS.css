@@ -4,6 +4,7 @@ body
 {
   background-color:black;
 	padding: 2vw;
+
   overflow: auto;
 }
 
@@ -18,7 +19,7 @@ body
 
   }
 
-#whiteoverlay
+.none
 {
   padding:3vw;
   margin: auto;
@@ -29,10 +30,10 @@ body
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FA00FF; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     margin-bottom: 5%;
 }
+
 
 #darkoverlay
 {
@@ -79,7 +80,7 @@ body
 
 .yellow
 {
-  color: #FFED00;
+  color: #FA00FF;
 }
 
 .heading
@@ -87,7 +88,7 @@ body
 	line-height:1.4;
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 800;
-  font-size: 90px;
+  font-size: 50px;
 }
 
 .at
@@ -177,14 +178,27 @@ table
 {
 
 	padding-top:2vw;
-
 }
 
+.main_images
+{
+object-fit: cover;
+overflow: hidden;
+width:28%;
+margin:2%;
+cursor:pointer;
+height:20vw;
+}
 #socials
 {
 	line-height:4vw;
 	margin-left:8.4vw;
 	margin-top:8.4vw;
+}
+
+#footer
+{
+margin-bottom: 30px;
 }
 
 a:link {
