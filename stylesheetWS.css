@@ -31,11 +31,10 @@ body
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
   width: 60vw; /* Full width (cover the whole page) */
-  height:auto;
   top: 10%;
   left: 0;
   right: 0;
-  bottom: auto;
+  bottom: 0;
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     margin-bottom: 5%;
 }
