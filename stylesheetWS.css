@@ -4,7 +4,6 @@ body
 {
   background-color:black;
 	padding: 2vw;
-<<<<<<< HEAD
 
   overflow: auto;
 }
@@ -21,23 +20,6 @@ body
   }
 
 .none
-=======
-  overflow: auto;
-}
-
-.noscroll {
-  overflow: hidden;
-}
-
-#overlay-content {
-  font-size: 30px;
-  height: 100%;
-  overflow: scroll;
-
-  }
-
-#whiteoverlay
->>>>>>> 20cd18228760580e5ab5037879f9556b73d152c6
 {
   padding:3vw;
   margin: auto;
@@ -48,19 +30,11 @@ body
   left: 0;
   right: 0;
   bottom: 0;
-<<<<<<< HEAD
-  background-color: #FFED00; /* Black background with opacity */
-=======
-  background-color: #FA00FF; /* Black background with opacity */
->>>>>>> 20cd18228760580e5ab5037879f9556b73d152c6
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     margin-bottom: 5%;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 20cd18228760580e5ab5037879f9556b73d152c6
 #darkoverlay
 {
   position: fixed; /* Sit on top of the page content */
@@ -106,11 +80,7 @@ body
 
 .yellow
 {
-<<<<<<< HEAD
   color: #FA00FF;
-=======
-  color: #FFED00;
->>>>>>> 20cd18228760580e5ab5037879f9556b73d152c6
 }
 
 .heading
@@ -118,11 +88,7 @@ body
 	line-height:1.4;
 	font-family: aktiv-grotesk-extended, sans-serif;
 	font-weight: 800;
-<<<<<<< HEAD
   font-size: 50px;
-=======
-  font-size: 90px;
->>>>>>> 20cd18228760580e5ab5037879f9556b73d152c6
 }
 
 .at
@@ -210,11 +176,6 @@ table
 
 #images
 {
-<<<<<<< HEAD
-=======
-
-	padding-top:2vw;
->>>>>>> 20cd18228760580e5ab5037879f9556b73d152c6
 
 	padding-top:2vw;
 }
