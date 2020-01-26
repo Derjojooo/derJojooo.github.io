@@ -12,6 +12,21 @@ background-color:black;
 	padding: 2vw;
 }
 
+.main_images
+{
+  width:21.5%;
+  margin:1%;
+}
+
+.main_images_shadow
+{
+  width:21.5%;
+  margin:1%;
+  -webkit-box-shadow: 13px 10px 10px 0px rgba(255,255,255,0.05);
+  -moz-box-shadow: 13px 10px 10px 0px rgba(255,255,255,0.05);
+  box-shadow: 13px 10px 10px 0px rgba(255,255,255,0.05);
+}
+
 #wtf_index
 {
 		color: white;
