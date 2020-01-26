@@ -20,8 +20,8 @@ background-color:black;
 
 .main_images_shadow
 {
-  width:21.5%;
-  margin:1%;
+  width:45%;
+  margin:2%;
   -webkit-box-shadow: 13px 10px 10px 0px rgba(255,255,255,0.05);
   -moz-box-shadow: 13px 10px 10px 0px rgba(255,255,255,0.05);
   box-shadow: 13px 10px 10px 0px rgba(255,255,255,0.05);
