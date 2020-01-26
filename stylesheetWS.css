@@ -127,7 +127,10 @@ bottom:0;
 	text-align:right;
 }
 
-
+#text
+{
+  p
+}
 .flow_text
 {
 	font-family: aktiv-grotesk-extended, sans-serif;
