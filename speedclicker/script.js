@@ -12,6 +12,9 @@ highscore.innerHTML = localStorage.getItem("highscoreValue");
 function checking() {
   if (check) {
     timer()
+
+    button.style.fontWeight = "700";
+
     check = false
   }
 }
@@ -37,7 +40,7 @@ function timer() {
 
 btnStart.addEventListener("click", function() {
   count++
-  clickCounter.innerHTML = count;
+  button.innerHTML = count;
   checking()
 });
 

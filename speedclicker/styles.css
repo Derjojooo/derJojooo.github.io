@@ -12,7 +12,7 @@ header {
   font-weight: bold;
   background-color: lightgray;
   padding: 10px;
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 
 .main button {
@@ -21,37 +21,39 @@ header {
   color:white;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2em;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 50px;
+  margin-top: 20px;
+  width:10em;
+  margin-bottom: 20px;
 }
 
 .explanation {
-  padding: 20px;
+  padding-top:5px;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .counter {
-  font-size: 5rem;
+  font-size: 4em;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-  padding: 10px;
   text-decoration: underline;
+  line-height: 0.5;
 }
 
 .timer {
-  font-size: 2rem;
+  font-size: 2em;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-  padding-top: 30px;
+  padding-top:0px;
 }
 
 .highscore {
-  font-size: 1rem;
+  font-size: 1em;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   padding: 0px;
@@ -60,7 +62,7 @@ header {
 }
 
 .highscore p {
-  font-size: 2rem;
+  font-size: 2em;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   padding: 0px;
