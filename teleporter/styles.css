@@ -6,6 +6,17 @@ body {
   background-color: #dedede;
 }
 
+@media only screen and (max-width: 800px) {
+  #button1 {
+    padding: 50px;
+    font-size: 5em;
+  }
+    #button2 {
+      padding: 30px;
+      font-size: 3em;
+  }
+  }
+
 .header {
   background: pink;
   color:purple;
