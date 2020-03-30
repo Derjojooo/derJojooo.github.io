@@ -39,7 +39,7 @@ header {
   font-size: 5rem;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
-  padding: 30px;
+  padding: 10px;
   text-decoration: underline;
 }
 
@@ -48,4 +48,22 @@ header {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   padding-top: 30px;
+}
+
+.highscore {
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0px;
+  text-decoration: underline;
+  line-height: 10px;
+}
+
+.highscore p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0px;
+  text-decoration: underline;
+  font-weight: 700;
 }

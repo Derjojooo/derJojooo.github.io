@@ -1,39 +1,44 @@
 var time = 0
 var count = 0
-var output = 0
+const btnStart = document.getElementById("button");
+const timerText = document.getElementById("timerText");
+const clickCounter = document.getElementById('clickCounter');
+const highscore = document.getElementById('highscore');
+var check = true;
 
+console.log(localStorage.getItem("highscoreValue"));
+highscore.innerHTML = localStorage.getItem("highscoreValue");
 
-function start() {
-
-  counterRepeat() 
-  function counterRepeat() {
-    window.setInterval(counter(), 100);
+function checking() {
+  if (check) {
+    timer()
+    check = false
   }
+}
 
-  function counter() {
-    time++
-    console.log(time)
-    document.getElementById('output').innerHTML = time;
+
+function timer() {
+  if (time < 9.9) {
+    time += 0.1
+    var num = time;
+    timerText.innerHTML = time.toFixed(2) + " von 10.00";
+    setTimeout(() => { timer() }, 100);
+  } else {
+    btnStart.disabled = true;
+      if (count > localStorage.getItem("highscoreValue")) {
+        localStorage.setItem("highscoreValue", count.valueOf());
+        alert("New Highscore of " + localStorage.getItem("highscoreValue"));
+        highscore.innerHTML = localStorage.getItem("highscoreValue");
+      }
   }
-
 }
 
 
 
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10)
-        seconds = parseInt(timer % 60, 10);
+btnStart.addEventListener("click", function() {
+  count++
+  clickCounter.innerHTML = count;
+  checking()
+});
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = 0;
-            // timer = duration; // uncomment this line to reset timer automatically after reaching 0
-        }
-    }, 1000);
-}
+highscore.innerHTML = localStorage.getItem("highscoreValue");
