@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Teleporter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="header" id="test">
+      <h1>Teleporter</h1>
+    </div>
+
+    <div class="Teleporter">
+      <div class="jette">
+        <img src="images/jette.png" alt="" class="jette">
+      </div>
+      <img src="images/jojo.png" alt="" class="jojo">
+      <img src="images/house1.png" alt="" class="house1">
+      <img src="images/house2.png" alt="" class="house2">
+    </div>
+
+    <div class="control">
+      <button type="button" onclick="javascript:teleport()">Teleport</button>
+    </div>
+
+    <div class="control2">
+      <button type="button" onclick="javascript:teleportBack()">reset</button>
+    </div>
+
+
+  </body>
+  <script>
+    function teleport() {
+      document.getElementsByClassName("jette")[0].style.float = "left";
+    }
+
+    function teleportBack() {
+      document.getElementsByClassName("jette")[0].style.float = "right";
+    }
+
+  </script>
+</html>

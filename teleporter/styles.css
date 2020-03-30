@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap');
+
+body {
+  margin:0;
+  padding:0;
+  background-color: #dedede;
+}
+
+.header {
+  background: pink;
+  color:purple;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1em;
+}
+
+.Teleporter {
+  padding: 30px;
+}
+
+.Teleporter img {
+  max-height: 140px;
+}
+
+.Teleporter .jette {
+  float: right;
+  padding:10px;
+}
+
+.Teleporter .house1 {
+  float: right;
+}
+
+
+.Teleporter .jojo {
+  float: left;
+}
+
+.control button {
+  background: blue;
+  border: none;
+  padding: 20px;
+  box-shadow: 4px 4px 0px;
+  font-size: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  transition: all 0.3s;
+  font-family: 'Comic Neue', cursive;
+  font-size: 3em;
+}
+
+.control button:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.control2 button {
+  background: black;
+  border: none;
+  padding: 5px;
+  font-size: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  transition: all 0.3s;
+  font-family: 'Comic Neue', cursive;
+  color:white;
+}
+
+.control2 button:hover {
+  background: red;
+  cursor: pointer;
+}
