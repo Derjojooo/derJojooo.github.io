@@ -74,11 +74,14 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 
-#nav tr:hover {
-  color: #6E839B;
-}
+
 
 #nav td {
   padding: 18px;
   border-top: 1px solid white;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }

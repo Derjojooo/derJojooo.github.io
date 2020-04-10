@@ -6,13 +6,19 @@
 
 
 body {
-  background: #E3BA88;
   margin: 0;
   padding: 0;
   font-family: Monument_Extended, sans-serif;
   color: #FFF5E7;
   cursor: default;
+  animation: colorchange 15s infinite alternate;
+}
 
+@keyframes colorchange
+{
+  0%   {background: #D39090;}
+  50%  {background: #E3BA88;}
+  100%  {background: #FF9921;}
 }
 
 #mouse_circle {
