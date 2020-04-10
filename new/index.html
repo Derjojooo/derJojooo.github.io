@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Johann Schnettker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="javascript" href="/js/javascript.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <img id="mouse_circle" src="images/Ellipse 3.svg"/>
+
+    <script type="text/javascript">
+      $(document).mousemove(function(e){
+          $("#mouse_circle").css({left:e.clientX, top:e.clientY});
+      });
+
+    </script>
+
+    <div class="header">
+      <div class="lines">
+        <img src="images/lines.svg" alt="lines" id="lines" align="left">
+      </div>
+
+      <div class="title">
+        <span>Johann Schnettker</span>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <marquee class="GeneratedMarquee" direction="left" scrollamount="50" behavior="scroll">Hi!, thanks for visiting my website! </marquee>
+      <div class="container">
+      <div class="navigation">
+        <table id="nav">
+          <tr>
+            <td><a href="design.html">Design</a></td>
+          </tr>
+          <tr>
+            <td><a href="code.html">Code</a></td>
+          </tr>
+          <tr>
+            <td><a href="games.html">Games</a></td>
+          </tr>
+        </table>
+      </div>
+      <img src="images/edited small.jpg" alt="image of me" id=background_image>
+      </div>
+      </div>
+
+  </body>
+</html>
