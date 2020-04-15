@@ -36,13 +36,20 @@ body {
   align-items: top;
 }
 
-.lines,.title {
+.lines,.title,.page_title {
   flex: 1 1 0;
 }
 
 .lines {
   order: 1;
   float: left;
+}
+
+.page_title {
+  order: 2;
+  text-align: center;
+  font-family: 'Book Antiqua', arial;
+  font-size: 3em;
 }
 
 .title {
@@ -84,6 +91,7 @@ body {
   margin-left: 60px;
 }
 
+
 #nav {
   padding-top: 20px;
   font-size: 1em;
@@ -93,7 +101,8 @@ body {
 }
 
 #nav tr:hover {
-  color: #897E70;
+  color: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
 }
 
 a {
