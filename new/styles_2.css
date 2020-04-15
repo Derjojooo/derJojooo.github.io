@@ -14,11 +14,24 @@ body {
 
 }
 
+#preview {
+  position: fixed;
+  max-width: 200px;
+  z-index: 3;
+
+}
+
+.preview {
+    display: none;
+    pointer-events: none;
+}
+
 #mouse_circle {
   position:fixed;
   transform: translate(-15px, -15px);
   max-width: 30px;
   pointer-events: none;
+  z-index: 4;
 }
 
 .header {

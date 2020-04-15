@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
-    
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138790194-1"></script>
@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <title>Design</title>
     <link rel="stylesheet" href="styles_2.css">
-    <link rel="javascript" href="/js/javascript.js">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
   <body>
@@ -26,16 +26,13 @@
       }
     </style>
 
-
-
     <img id="mouse_circle" src="images/Ellipse 3.svg"/>
 
     <script type="text/javascript">
-      $(document).mousemove(function(e){
-          $("#mouse_circle").css({left:e.clientX, top:e.clientY});
-      });
 
     </script>
+
+
 
     <div class="header">
       <div class="lines">
@@ -46,17 +43,21 @@
         <span>Johann Schnettker</span>
       </div>
 
-      <div class="page_title">
+      <div class="page_title" id="page_title">
         Design
       </div>
 
     </div>
 
     <div class="content">
+      <div "preview">
+        <img src="images\36daysoftype\image 1.jpg" id="preview" class="preview">
+        <img src="images\36daysoftype\image 2.jpg" id="preview" class="preview">
+      </div>
       <div class="container">
         <table id="nav">
           <tr>
-            <td class="none">36DaysOfType</td>
+            <td class="none" id="one">36DaysOfType</td>
           </tr>
           <tr>
             <td>3D Stuff</td>
@@ -73,6 +74,6 @@
         </table>
       </div>
     </div>
-
+    <script type="text/javascript" src="javascript.js"></script>
   </body>
 </html>
